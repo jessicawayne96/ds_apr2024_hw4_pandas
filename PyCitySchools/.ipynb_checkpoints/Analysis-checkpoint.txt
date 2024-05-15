@@ -1,0 +1,11 @@
+PySchool Analysis
+
+This analysis combines two csvs of school data, one of school names and their demographic information and the other of students and demographic information on them. Combining these two spreadsheets into one dataframe allows us to look at test scores and budgets by school, by school type, and overall. We were also able to parse test scores by grade, by budget buckets, and by size buckets. A handful of conclusions can be drawn from these data summaries:
+
+* Note - "passing" is considered test scores above a 70. 
+
+1. Size of the school impacts math & reading test scores and percentage of students passing. In this case large schools of 2000 kids or more, performance was the worst with %69% passing math, 82% passing reading and 58% passing both. It does appear however that there is not a big difference in performance based on a small (less than 1000 students) or medium (1000 to 2000 students) school. Small schools had 93% of students passing math, 96% passing reading, and 89% passing both while medium sized schools has 93% passing math, 96% passing reading and 90% passing both. 
+
+2. Charter school students perform better on math and reading test scores than district schools. In Charter schools 93% are passing math, 96% are passing reading, and 90% are passing both while in District schools only 66% are passing math, 80% are passing reading, and 53% are passing both.
+
+3. One of the final conclusions you can draw from this dataset is that budget per student has an inverse relationship with student scores. For this analysis, test scores were dropped into buckets of funding so while there is an inverse relationship we don't know if there is a turning point in spending where too little budget per student starts dropping test scores again. In this case, when budget per student less than $585, 93% of students are passing math, 96% are passing reading, and 90% are passing both. These scores all gradually decrease over the buckets of $585 to $630 per student, $630 to $645 per student, and $645 to $680 per student with passing percentages in this final category at 66% passing math, 81% passing reading, and 53% passing both. 
